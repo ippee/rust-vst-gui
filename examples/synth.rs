@@ -168,7 +168,7 @@ impl Plugin for ExampleSynth {
         let gui = vst_gui::new_plugin_gui(
             String::from(HTML),
             create_javascript_callback(self.oscillator.clone()),
-            None);
+            Some((480, 320)));
         Some(Box::new(gui))
     }
 }
