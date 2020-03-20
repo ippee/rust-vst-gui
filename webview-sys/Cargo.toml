@@ -1,0 +1,19 @@
+[package]
+name = "webview-sys"
+version = "0.0.1"
+license = "MIT"
+description = "Rust native ffi bindings for webview"
+build = "build.rs"
+links = "webview"
+
+[lib]
+name = "webview_sys"
+path = "lib.rs"
+
+[dependencies]
+libc = "0.2"
+cocoa = "0.20.0"
+
+[build-dependencies]
+cc = "1"
+pkg-config = "0.3"
