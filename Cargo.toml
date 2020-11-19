@@ -7,7 +7,7 @@ license = "MIT"
 keywords = ["gui", "plugin", "vst", "vst2"]
 
 [dependencies]
-vst = { git = "https://github.com/ippee/vst-rs.git", branch = "mod"}
+vst = "0.2.1"
 
 [target.'cfg(target_os = "macos")'.dependencies]
 cocoa = "0.20.0"
